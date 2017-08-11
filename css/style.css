@@ -1,0 +1,21 @@
+#navbar-logo {
+  //height: 50px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr fr;
+}
+
+#bar1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#pie1 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
