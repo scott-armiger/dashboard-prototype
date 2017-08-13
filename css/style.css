@@ -1,13 +1,14 @@
 #navbar-logo {
   //height: 50px;
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .charts {
+  margin-left: 18%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 #bar1 {

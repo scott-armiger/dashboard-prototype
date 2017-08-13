@@ -16,6 +16,7 @@
 
     <body>
 
+    <!--Top Navbar-->
       <nav>
         <div class="nav-wrapper grey darken-3">
           <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -26,8 +27,11 @@
           </ul>
         </div>
       </nav>
+      <!--END TOP NAVBAR -->
 
       <br><br><br>
+
+      <!--SIDE NAV BAR -->
 
       <ul id="slide-out" class="side-nav fixed green darken">
           <img id="navbar-logo" src="assets/logo.png" alt="Onyx Point Logo" height="" width="200" class="responsive-image brand-logo">
@@ -41,6 +45,7 @@
         <li><a class="subheader">Drill-down</a>
         </li>
 
+        <!--HostGroup collapible -->
         <li>
           <ul class="collapsible" data-collapsible="accordion">
             <li>
@@ -68,23 +73,28 @@
           </ul>
         </li>
       </ul>
+    <!-- END SIDE NAVBAR -->
+
+
+    <!-- CHARTS -->
       <div class="container charts">
         <canvas id="bar1" width="700" height="400"></canvas>
         <canvas id="pie1" width="400" height="400"></canvas>
+        <canvas id="line1" width ="700" height="400"></canvas>
+        <canvas id="polar1" width ="400" height="400"></canvas>
       </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+      <!--Import chart.js -->
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+
+      <!--Importing chart.js scripts -->
       <script type="text/javascript" src="js/mahchart.js"></script>
 
-
-      <script>
-
-        $(document).ready(function(){
-          $(".button-collapse").sideNav();
-        });
-      </script>
+      <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- END CHARTS -->
 
     </body>
 
