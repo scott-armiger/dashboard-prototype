@@ -65,7 +65,7 @@ var line1 = new Chart(line1e, {
     datasets: [{
       label: 'passing',
       data: [12, 19, 3, 17, 6, 3, 7],
-      backgroundColor: "rgb(65, 244, 92, 0.9)"
+      backgroundColor: "rgb(65, 244, 92)"
     }, {
       label: 'Failing',
       data: [20, 20, 20, 20, 20, 20, 20],
@@ -101,6 +101,102 @@ var polar1 = new Chart(polare, {
       title: {
         display: true,
         text: "Overall Severity"
+      },
+  }
+});
+
+//Line Chart For Low Severity
+var line2e = document.getElementById('line2').getContext('2d');
+var line2 = new Chart(line2e, {
+  type: 'line',
+  data: {
+    labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+    datasets: [{
+      label: 'passing',
+      data: [12, 19, 3, 17, 6, 3, 7],
+      borderColor: "rgb(255,255,255)",
+      fill:false,
+      //backgroundColor: "rgb(65, 244, 92, 0.9)"
+    }]
+  },
+  options: {
+      responsive: false,
+      legend: {
+        display: false
+      },
+      scales:
+      {
+          xAxes: [{
+              display: false
+          }],
+          yAxes: [{
+              display: false
+          }]
+
+      },
+  }
+});
+
+//Line Chart For Medium Severity
+var line3e = document.getElementById('line3').getContext('2d');
+var line3 = new Chart(line3e, {
+  type: 'line',
+  data: {
+    labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+    datasets: [{
+      label: 'passing',
+      data: [7, 18, 8, 12, 4, 2, 7],
+      borderColor: "rgb(255,255,255)",
+      fill:false,
+      //backgroundColor: "rgb(65, 244, 92, 0.9)"
+    }]
+  },
+  options: {
+      responsive: false,
+      legend: {
+        display: false
+      },
+      scales:
+      {
+          xAxes: [{
+              display: false
+          }],
+          yAxes: [{
+              display: false
+          }]
+
+      },
+  }
+});
+
+//Line Chart For High Severity
+var line4e = document.getElementById('line4').getContext('2d');
+var line4 = new Chart(line4e, {
+  type: 'line',
+  data: {
+    labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+    datasets: [{
+      label: 'passing',
+      data: [7, 19, 8, 17, 6, 15, 13],
+      borderColor: "rgb(255,255,255)",
+      fill:false,
+      //backgroundColor: "rgb(65, 244, 92, 0.9)"
+    }]
+  },
+  options: {
+      responsive: false,
+      legend: {
+        display: false
+      },
+      scales:
+      {
+          xAxes: [{
+              display: false
+          }],
+          yAxes: [{
+              display: false
+          }]
+
       },
   }
 });

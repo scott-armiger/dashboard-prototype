@@ -72,8 +72,42 @@
             </li>
           </ul>
         </li>
-      </ul>
-    <!-- END SIDE NAVBAR -->
+      </ul>   <!-- END SIDE NAVBAR -->
+
+    <div class="severity-cards container">
+      <!-- Info Cards -->
+
+      <!--Low Severity Card -->
+      <div id="low-severity-card" class="card-panel blue">
+        <span class="center white-text">
+            <h5><b>Low Severity<b></h5>
+            <h4><b>1705<b></h4>
+        </span>
+        <div class="divider"></div>
+        <canvas id="line2" class= "card-chart"></canvas>
+      </div>
+
+      <!-- Medium Severity Card -->
+      <div id="med-severity-card" class="card-panel yellow darken-3">
+        <span class="center white-text">
+            <h5><b>Medium Severity<b></h5>
+            <h4><b>1705<b></h4>
+        </span>
+        <div class="divider"></div>
+        <canvas id="line3" class="card-chart"></canvas>
+      </div>
+
+       <!-- High Severity Card -->
+       <div id="high-severity-card" class="card-panel red darken-3">
+         <span class="center white-text">
+             <h5><b>High Severity<b></h5>
+             <h4><b>1705<b></h4>
+         </span>
+         <div class="divider"></div>
+         <canvas id="line4" class="card-chart"></canvas>
+      </div>
+
+     </div> <!-- End Info Cards -->
 
 
     <!-- CHARTS -->
@@ -82,7 +116,9 @@
         <canvas id="pie1" width="400" height="400"></canvas>
         <canvas id="line1" width ="700" height="400"></canvas>
         <canvas id="polar1" width ="400" height="400"></canvas>
-      </div>
+      </div> <!-- End Charts -->
+
+
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
