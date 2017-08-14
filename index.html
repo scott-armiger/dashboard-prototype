@@ -23,11 +23,6 @@
             <a class="page-title bold" style="font-size:25px;">Overview</a>
           </div>
           <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
         </div>
       </nav>
       <!--END TOP NAVBAR -->
@@ -115,7 +110,12 @@
 
     <!-- CHARTS -->
       <div class="container charts">
-        <canvas id="bar1" width="700" height="400"></canvas>
+        <div class="card blue">
+          <div class="card-content white-text">
+            <span class="card-title"><h5 class="bold">Number of Failing Tests Per Host</h5></span>
+            <canvas id="bar1" width="700" height="400"></canvas>
+          </div>
+        </div>
         <canvas id="pie1" width="400" height="400"></canvas>
         <canvas id="line1" width ="700" height="400"></canvas>
         <canvas id="polar1" width ="400" height="400"></canvas>
