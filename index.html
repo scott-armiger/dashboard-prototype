@@ -110,15 +110,30 @@
 
     <!-- CHARTS -->
       <div class="container charts">
-        <div class="card blue">
+        <div class="card grey darken-2">
           <div class="card-content white-text">
-            <span class="card-title"><h5 class="bold">Number of Failing Tests Per Host</h5></span>
+            <span class="card-title"><h5 class="bold">Overall Severity Levels</h5></span>
             <canvas id="bar1" width="700" height="400"></canvas>
           </div>
         </div>
-        <canvas id="pie1" width="400" height="400"></canvas>
-        <canvas id="line1" width ="700" height="400"></canvas>
-        <canvas id="polar1" width ="400" height="400"></canvas>
+        <div class="card grey darken-3">
+          <div class="card-content white-text">
+            <span class="card-title"><h5 class="bold">Number of Failing Tests Per Host</h5></span>
+            <canvas id="pie1" width="400" height="400"></canvas>
+          </div>
+        </div>
+        <div class="card grey darken">
+          <div class="card-content white-text">
+            <div class="card-title"><h5 class="bold">Passing Hosts Over Time</h5></div>
+            <canvas id="line1" width ="700" height="400"></canvas>
+          </div>
+        </div>
+        <div class="card grey darken-2">
+          <div class="card-content white-text">
+            <div class="cardtit"><h5 class="bold">Overall Severity Levels</h5></div>
+            <canvas id="polar1" width ="400" height="400"></canvas>
+          </div>
+        </div>
       </div> <!-- End Charts -->
 
 

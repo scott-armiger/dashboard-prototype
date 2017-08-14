@@ -8,24 +8,39 @@ var bar1 = new Chart(bar1e, {
        label: 'Number of Failing Tests per Host',
        data: [341, 115, 222, 122, 431, 1231, 872, 75],
        backgroundColor: [
-         'rgba(255, 99, 132, 0.6)',
-         'rgba(54, 162, 235, 0.6)',
-         'rgba(255, 206, 86, 0.6)',
-         'rgba(75, 192, 192, 0.6)',
-         'rgba(153, 102, 255, 0.6)',
-         'rgba(255, 159, 64, 0.6)',
-         'rgba(255, 99, 132, 0.6)',
-         'rgba(54, 162, 235, 0.6)',
-         'rgba(255, 206, 86, 0.6)',
-         'rgba(75, 192, 192, 0.6)',
-         'rgba(153, 102, 255, 0.6)'
+         'rgba(112, 212, 79, 0.9)',
+         'rgba(51, 51, 51, 0.9)',
+         'rgba(110, 208, 78, 0.9)',
+         'rgba(34, 34, 34, .9)',
+         'rgba(113, 213, 79, 0.9)',
+         'rgba(51, 51, 51, 0.9)',
+         'rgba(110, 208, 78, 0.9)',
+         'rgba(51, 51, 51, 0.9)',
        ]
      }]
    },
    options: {
-     title: {
-       display: true,
-       text: "Number of Failing Tests per Host"
+     legend: {
+          display: false,
+      },
+     scales: {
+       xAxes: [{
+         gridLines: {
+           display: false,
+         },
+         ticks: {
+           fontColor: '#FFFFFF',
+         },
+       }],
+       yAxes: [{
+         gridLines: {
+           color: 'rgba(255,255,255, .6)',
+           display: true,
+         },
+         ticks: {
+           fontColor: '#FFFFFF',
+         },
+       }]
      },
      responsive: false,
    }
@@ -41,19 +56,20 @@ var pie1 = new Chart(pie1e, {
        label: 'Overall Severity Levels',
        data: [1705,852,852],
        backgroundColor: [
-         'rgba(255, 99, 132, 0.6)',
-         'rgba(54, 162, 235, 0.6)',
-         'rgba(255, 206, 86, 0.6)',
+         'rgba(113, 213, 79, 0.9)',
+         'rgba(51, 51, 51, 0.9)',
+         'rgba(121, 121, 121, 0.9)',
        ]
      }]
    },
    options: {
-     title: {
-       display: true,
-       text: "Overall Severity Levels"
-     },
+     legend: {
+       labels: {
+        fontColor: "white",
+        }
+      },
      responsive: false,
-   }
+   },
 });
 
 //Line Chart
@@ -65,19 +81,34 @@ var line1 = new Chart(line1e, {
     datasets: [{
       label: 'passing',
       data: [12, 19, 3, 17, 6, 3, 7],
-      backgroundColor: "rgb(65, 244, 92)"
-    }, {
-      label: 'Failing',
-      data: [20, 20, 20, 20, 20, 20, 20],
-      backgroundColor: "rgba(244, 79, 65, 0.8)"
-    }]
+      backgroundColor: "rgba(113, 213, 79, 0.9)"
+    },
+  ]
   },
   options: {
-      responsive: false,
-      title: {
-        display: true,
-        text: "Passing Hosts Over Time"
-      },
+    legend: {
+         display: false,
+     },
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false,
+        },
+        ticks: {
+          fontColor: '#FFFFFF',
+        },
+      }],
+      yAxes: [{
+        gridLines: {
+          color: 'rgba(255,255,255, .6)',
+          display: true,
+        },
+        ticks: {
+          fontColor: '#FFFFFF',
+        },
+      }]
+    },
+    responsive: false,
   }
 });
 
@@ -89,20 +120,21 @@ var polar1 = new Chart(polare, {
     labels: ["High", "Medium", "Low"],
     datasets: [{
       backgroundColor: [
-        "rgb(244, 79, 65)",
-        "#3498db",
-        "#95a5a6",
+        'rgba(113, 213, 79, 0.9)',
+        'rgba(51, 51, 51, 0.9)',
+        'rgba(121, 121, 121, 0.9)',
       ],
       data: [1705,852,852]
     }]
   },
   options: {
-      responsive: false,
-      title: {
-        display: true,
-        text: "Overall Severity"
-      },
-  }
+    legend: {
+      labels: {
+       fontColor: "white",
+       }
+     },
+    responsive: false,
+  },
 });
 
 //Line Chart For Low Severity
