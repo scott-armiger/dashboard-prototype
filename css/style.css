@@ -1,5 +1,4 @@
 #navbar-logo {
-  //height: 50px;
   margin-top: 20px;
   margin-left: 20px;
 }
@@ -12,6 +11,14 @@
 #pie1 {
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
+}
+
+.search-bar-elem {
+  display: inline-block;
+}
+
+.search-bar {
+  background-color: #616161;
 }
 
 .card-chart {
@@ -42,6 +49,12 @@
 .severity-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.search-tables {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5em;
 }
 
 .parallax-container {
