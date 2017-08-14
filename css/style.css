@@ -36,15 +36,38 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 5em;
+  grid-gap: 2em;
 }
 
 .severity-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5em;
 }
 
 .parallax-container {
   height: 220px;
+}
+
+.page-footer {
+  margin-top: 5%;
+}
+
+.parallax2 {
+    /* The image used */
+    background:
+
+    linear-gradient(
+    rgba(251,251,251,0.3),
+    rgba(251,251,251,0.3)
+    ),
+    url("/assets/banner.jpg") scroll no-repeat center/cover;
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
