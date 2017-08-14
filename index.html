@@ -29,7 +29,7 @@
 
       <!--SIDE NAV BAR -->
 
-      <ul id="slide-out" class="side-nav fixed grey darken-2">
+      <ul id="slide-out" class="side-nav fixed grey darken-2 grey-text text-lighten-2" >
           <img id="navbar-logo" src="assets/logo.png" alt="Onyx Point Logo" height="" width="200" class="responsive-image brand-logo">
         <li><div class="user-view white-text">
           <a href="#!user"><img class="circle" src="assets/duhbear2.jpg"></a>
@@ -37,37 +37,51 @@
           <a href="#!email"><span class="white-text email">iluvsalmon@duhbear.cute</span></a>
         </div></li>
 
-        <li><div class="divider green"></div></li>
-        <li><a class="subheader">Drill-down</a>
+
+        <li><div class="divider"></div></li>
         </li>
 
         <!--HostGroup collapible -->
-        <li>
+
           <ul class="collapsible" data-collapsible="accordion">
+          <li><div class="collapsible-header waves-effect waves-effect"><a class="grey-text text-lighten-2" href="#!"><i class="green-text text-lighten-2 material-icons">dashboard</i>Dashboard</a></div></li>
+
             <li>
-              <div class="collapsible-header waves-effect waves-light"><i class="material-icons">cloud</i>Hostgroup 1</div>
-              <div class="green collapsible-body">
+              <div class="collapsible-header waves-effect waves-light"><i class="green-text text-lighten-2 material-icons">short_text</i>SCAP Results</div>
+              <div class="grey lighten-1 collapsible-body">
                 <ul>
-                  <li><a class="waves-effect" href="#!"><i class="material-icons">computer</i>Host1</a></li>
-                  <li><a class="waves-effect" href="#!"><i class="material-icons">computer</i>Host2</a></li>
-                  <li><a class="waves-effect" href="#!"><i class="material-icons">computer</i>Host3</a></li>
-                  <li><a class="waves-effect" href="#!"><i class="material-icons">computer</i>Host4</a></li>
+                  <li><a class="waves-effect" href="#!"><i class="material-icons">access_time</i>Latest</a></li>
+                  <li><a class="waves-effect" href="#!"><i class="material-icons">access_time</i>Today so far</a></li>
+                  <li><a class="waves-effect" href="#!"><i class="material-icons">access_time</i>Last 6 months</a></li>
+                  <li><a class="waves-effect" href="#!"><i class="material-icons">access_time</i>Last year</a></li>
                 </ul>
               </div>
             </li>
+
             <li>
-              <div class="collapsible-header waves-effect waves-light"><i class="material-icons">cloud</i>Hostgroup 2</div>
-              <div class="green collapsible-body">
+              <div class="collapsible-header waves-effect waves-light"><i class="green-text text-lighten-2 material-icons">build</i>Configuration</div>
+              <div class="grey lighten-1 collapsible-body">
                 <ul>
-                  <li><a class="waves-effect" href="#!"><i class="material-icons">computer</i>Host5</a></li>
-                  <li><a class="waves-effect" href="#!"><i class="material-icons">computer</i>Host6</a></li>
-                  <li><a class="waves-effect" href="#!"><i class="material-icons">computer</i>Host7</a></li>
-                  <li><a class="waves-effect" href="#!"><i class="material-icons">computer</i>Host8</a></li>
+                  <li><a class="waves-effect" href="#!"><i class="material-icons">settings_applications</i>Puppet Parameters</a></li>
+                  <li><a class="waves-effect" href="#!"><i class="material-icons">settings_applications</i>SIMP Settings</a></li>
                 </ul>
               </div>
             </li>
+
+            <li>
+              <div class="collapsible-header waves-effect waves-light"><i class="green-text text-lighten-2 material-icons">vpn_key</i>Admin</div>
+              <div class="grey lighten-1 collapsible-body ">
+                <ul>
+                  <li><a class="waves-effect" href="#!"><i class="material-icons">person</i>Users</a></li>
+                  <li><a class="waves-effect" href="#!"><i class="material-icons">people</i>Groups</a></li>
+                  <li><a class="waves-effect" href="#!"><i class="material-icons">person_add</i>LDAP</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li><div class="collapsible-header waves-effect waves-effect"><a class="grey-text text-lighten-2" href="#!"><i class="green-text text-lighten-2 material-icons">copyright</i>License</a></div></li>
+
           </ul>
-        </li>
       </ul>   <!-- END SIDE NAVBAR -->
 
     <div class="severity-cards container">
@@ -105,46 +119,6 @@
      </div>
      <!-- End Info Cards -->
 
-     <!-- Host Filtering -->
-     <div class="search-tables container">
-       <div class="search-table">
-         <div class="search-bar">
-           <i class="material-icons search-bar-elem">search</i>
-           <input type="text" id="hostgroup-search" class="search-bar-elem">
-         </div>
-         <table id="hostgroup-drilldown">
-           <thead>
-             <tr><td>Hostgroups</td></tr>
-           </thead>
-           <tbody>
-             <tr><td>Hostgroup1</td></tr>
-             <tr><td>Hostgroup2</td></tr>
-             <tr><td>Hostgroup3</td></tr>
-           </tbody>
-         </table>
-       </div>
-       <div class="search-table">
-         <div class="search-bar">
-           <i class="material-icons search-bar-elem">search</i>
-           <input type="text" id="host-search" class="search-bar-elem">
-         </div>
-         <table id="host-drilldown">
-           <thead>
-             <tr><td>Host</td></tr>
-           </thead>
-           <tbody>
-             <tr><td>Host1</td></tr>
-             <tr><td>Host2</td></tr>
-             <tr><td>Host3</td></tr>
-             <tr><td>Host4</td></tr>
-             <tr><td>Host5</td></tr>
-             <tr><td>Host6</td></tr>
-           </tbody>
-         </table>
-       </div>
-     </div>
-     <!-- End Host Filtering -->
-
 
     <!-- CHARTS -->
       <div class="container charts">
@@ -173,6 +147,47 @@
           </div>
         </div>
       </div> <!-- End Charts -->
+
+      <!-- Host Filtering -->
+      <div class="search-tables container">
+        <div class="search-table">
+          <div class="search-bar">
+            <i class="green-text text-lighten-2 material-icons search-bar-elem">search</i>
+            <input type="text" id="hostgroup-search" class="search-bar-elem">
+          </div>
+          <table id="hostgroup-drilldown">
+            <thead>
+              <tr><td>Hostgroups</td></tr>
+            </thead>
+            <tbody>
+              <tr><td>Hostgroup1</td></tr>
+              <tr><td>Hostgroup2</td></tr>
+              <tr><td>Hostgroup3</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="search-table">
+          <div class="search-bar">
+            <i class="green-text text-lighten-2 material-icons search-bar-elem">search</i>
+            <input type="text" id="host-search" class="search-bar-elem">
+          </div>
+          <table id="host-drilldown">
+            <thead>
+              <tr><td>Host</td></tr>
+            </thead>
+            <tbody>
+              <tr><td>Host1</td></tr>
+              <tr><td>Host2</td></tr>
+              <tr><td>Host3</td></tr>
+              <tr><td>Host4</td></tr>
+              <tr><td>Host5</td></tr>
+              <tr><td>Host6</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- End Host Filtering -->
+
 
 
         <!--Footer -->
