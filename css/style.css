@@ -45,6 +45,6 @@
   grid-gap: 5em;
 }
 
-.page-footer {
-  margin-top: 4%;
+.parallax-container {
+  height: 220px;
 }

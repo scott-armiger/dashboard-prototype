@@ -81,7 +81,8 @@ var line1 = new Chart(line1e, {
     datasets: [{
       label: 'passing',
       data: [12, 19, 3, 17, 6, 3, 7],
-      backgroundColor: "rgba(113, 213, 79, 0.9)"
+      backgroundColor: "rgba(140, 254, 106, 0.5)",
+      borderColor: "rgb(255,255,255)",
     },
   ]
   },
@@ -117,7 +118,7 @@ var polare = document.getElementById("polar1").getContext('2d');
 var polar1 = new Chart(polare, {
   type: 'polarArea',
   data: {
-    labels: ["High", "Medium", "Low"],
+    labels: ["Low", "Medium", "High"],
     datasets: [{
       backgroundColor: [
         'rgba(113, 213, 79, 0.9)',
