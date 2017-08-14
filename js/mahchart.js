@@ -51,14 +51,14 @@ var pie1e = document.getElementById("pie1");
 var pie1 = new Chart(pie1e, {
   type: 'pie',
    data: {
-     labels: ["Low", "Medium", "High"],
+     labels: ["High", "Medium", "low"],
      datasets: [{
        label: 'Overall Severity Levels',
        data: [1705,852,852],
        backgroundColor: [
          'rgba(113, 213, 79, 0.9)',
-         'rgba(51, 51, 51, 0.9)',
          'rgba(121, 121, 121, 0.9)',
+         'rgba(51, 51, 51, 0.9)',
        ]
      }]
    },
@@ -118,12 +118,12 @@ var polare = document.getElementById("polar1").getContext('2d');
 var polar1 = new Chart(polare, {
   type: 'polarArea',
   data: {
-    labels: ["Low", "Medium", "High"],
+    labels: ["High", "Medium", "Low"],
     datasets: [{
       backgroundColor: [
         'rgba(113, 213, 79, 0.9)',
-        'rgba(51, 51, 51, 0.9)',
         'rgba(121, 121, 121, 0.9)',
+        'rgba(51, 51, 51, 0.9)',
       ],
       data: [1705,852,852]
     }]
